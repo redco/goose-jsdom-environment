@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "name": "goose-jsdom-environment",
   "main": "lib/JsDOMEnvironment.js",
   "repository": "redco/goose-jsdom-environment",
@@ -26,8 +26,8 @@
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "babel-polyfill": "^6.23.0",
-    "debug": "^3.0.1",
-    "goose-abstract-environment": "1.0.10",
+    "debug": "^3.1.0",
+    "goose-abstract-environment": "^1.0.12",
     "jsdom": "^9.4.2",
     "lodash.clone": "^4.5.0",
     "lodash.defaults": "^4.2.0",
