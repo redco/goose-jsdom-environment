@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "goose-jsdom-environment",
   "main": "lib/JsDOMEnvironment.js",
   "repository": "redco/goose-jsdom-environment",
