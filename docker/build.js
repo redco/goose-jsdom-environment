@@ -1,21 +1,21 @@
+/* eslint-disable no-console */
+
 const fs = require('fs');
 const { exec } = require('child_process');
-const { version } = require('./package.json');
 
-const getVersion = async (environmentName) => {
-  return new Promise((resolve, reject) => {
-    exec(`npm show ${environmentName} version`, (err, stdout, stderr) => {
+const getVersion = async environmentName =>
+  new Promise((resolve, reject) =>
+    exec(`npm show ${environmentName} version`, (err, stdout) => {
       if (err) {
         reject(err);
         return;
       }
 
       resolve(stdout.trim());
-    });
-  });
-};
+    }),
+  );
 
-(async function () {
+(async () => {
   try {
     const environmentName = process.env.ENVIRONMENT;
     if (!environmentName) {
